@@ -3,7 +3,7 @@
 A modern finance tracking web application to manage income, expenses, and budgets with real-time analytics.
 
 ## 🚀 Live Demo
-👉 https://your-username.github.io/finance-tracker/
+👉 https://ashritha-gollapalli.github.io/finance-tracker/
 
 ## ✨ Features
 - Add & delete transactions
@@ -39,3 +39,4 @@ A modern finance tracking web application to manage income, expenses, and budget
 git clone https://github.com/your-username/finance-tracker.git
 cd finance-tracker
 open index.html
+click go live
