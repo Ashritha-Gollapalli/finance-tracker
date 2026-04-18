@@ -31,7 +31,7 @@ A modern finance tracking web application to manage income, expenses, and budget
 ### Dashboard
 ![Dashboard](./assets/screenshots/Screenshot1.png)
 ### Charts
-![Charts](./assets/screenshots/Screensshot2.png)
+![Charts](./assets/screenshots/Screenshot2.png)
 
 
 ## 📦 Setup
