@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Finance Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/main.css" />
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- HEADER -->
+    <header>
+      <h1>Finance Tracker</h1>
+    </header>
+
+    <!-- TOP SECTION -->
+    <div class="top-section">
+
+      <!-- BUDGET -->
+      <div class="card" id="budget-section">
+        <h2>Set Monthly Budget</h2>
+
+        <div class="budget-input">
+          <input type="number" id="budgetInput" placeholder="Enter budget" />
+          <button id="setBudgetBtn">Set Budget</button>
+        </div>
+
+        <p>Budget: ₹<span id="budgetValue">0</span></p>
+        <p id="budgetStatus"></p>
+      </div>
+
+      <!-- SUMMARY -->
+      <div class="card" id="summary-section">
+        <h2>Summary</h2>
+        <p>Balance: ₹<span id="balance">0</span></p>
+        <p>Income: ₹<span id="income">0</span></p>
+        <p>Expense: ₹<span id="expense">0</span></p>
+      </div>
+
+    </div>
+
+    <!-- FORM -->
+    <div class="card" id="form-section">
+      <h2>Add Transaction</h2>
+
+      <input type="number" id="amount" placeholder="Amount" />
+
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+
+      <input type="text" id="category" placeholder="Category" />
+
+      <input type="date" id="date" required />
+
+      <button id="add-btn">Add</button>
+    </div>
+
+    <!-- TRANSACTIONS -->
+    <div class="card">
+      <h2>Transactions</h2>
+      <div id="transactions"></div>
+    </div>
+
+    <!-- CHARTS -->
+    <div class="charts">
+
+      <div class="card">
+        <h3>Spending by Category</h3>
+        <canvas id="categoryChart"></canvas>
+      </div>
+
+      <div class="card">
+        <h3>Income vs Expense</h3>
+        <canvas id="barChart"></canvas>
+      </div>
+
+      <div class="card">
+        <h3>Spending Trend</h3>
+        <canvas id="lineChart"></canvas>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- JS -->
+  <script type="module" src="js/app.js"></script>
+
+</body>
+</html>

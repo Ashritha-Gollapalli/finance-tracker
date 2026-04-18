@@ -1,0 +1,19 @@
+:root {
+  /* Backgrounds */
+  --bg: #f5f7fa;
+  --card: #2a2046;
+
+  /* Text */
+  --text: #050f18;
+  --muted: #0c0c13;
+
+  /* Accents */
+  --primary: #3134f0;
+  --primary-light: #818cf8;
+
+  --income: #22c55e;
+  --expense: #ef4444;
+
+  /* Borders */
+  --border: #1f2937;
+}
